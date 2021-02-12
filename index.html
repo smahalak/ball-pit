@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    />
     <link rel="icon" href="./assets/favicon.ico" />
     <title>Ball Pit</title>
   </head>
@@ -13,14 +17,22 @@
     <section class="welcome-container">
       <form class="player-name-form">
         <h1 class="title">BALL PIT</h1>
-        <label for="name">Player name:</label>
+        <label class="form-text" for="name">Player name:</label>
         <input
           type="text"
+          class="form-input-field"
           id="name"
           placeholder="Enter your Name"
           name="name"
           required
         />
+
+        <label class="form-text" for="type">Enter token</label>
+        <select class="form-input-field" name="type" id="type">
+          <option value="token">1 Token</option>
+          <option value="token">2 Tokens</option>
+        </select>
+
         <button class="play-button"><a href="./game.html"> PLAY</a></button>
       </form>
     </section>
